@@ -14,6 +14,7 @@
     "posttest": "npm run lint"
   },
   "dependencies": {
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "node-fetch": "^3.3.0"
   }
 }
