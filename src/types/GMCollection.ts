@@ -1,3 +1,4 @@
+import {TokenData} from "./TokenData";
 
 
 export type GMCollection = {
@@ -7,4 +8,6 @@ export type GMCollection = {
   size: number
   twitter: string
   contract: string
+  attributes: {name: string, values: string[]}[]
+  tokens: TokenData[]
 }

@@ -8,7 +8,7 @@ export const ready = {
   execute: (client: Client) => {
     console.log(`Ready! Logged in as ${client.user?.tag}`);
     client.user?.setAvatar(config.avatar_url).catch((e) => console.log(e));
-    client.user?.setUsername("gm.collections");
+    client.user?.setUsername(config.username);
     client.guilds.cache.forEach(async (guild) => {
       try {
         await guild.commands.set(commands_array);
