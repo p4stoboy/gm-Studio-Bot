@@ -7,5 +7,5 @@ export type TokenData = {
   image: string
   seed: string
   description: string
-  attributes: any
+  attributes: {[key: string]: string | number}
 }

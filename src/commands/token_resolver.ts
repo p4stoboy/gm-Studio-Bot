@@ -27,7 +27,7 @@ const filter_options = (interaction: ChatInputCommandInteraction, collection: GM
   let tokens = [...collection.tokens];
   for (let option of options) {
     if (option.name === "token_id") continue;
-    tokens = tokens.filter(token => token.attributes[option.name] === option.value);
+    tokens = tokens.filter(token => token.attributes[option.name === "palette_contd" ? "palette" : option.name] === option.value);
   }
   return tokens;
 }
