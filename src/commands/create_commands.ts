@@ -72,7 +72,7 @@ for (let collection of collections) {
 }
 
 const global_random = {
-  name: "all_collections",
+  name: "random",
   description: `get a random gm.studio token`,
   execute: gm_func,
   type: 1
