@@ -1,0 +1,98 @@
+{
+  "root": [
+    {
+      "name": "broad_brushstrokes",
+      "values": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "name": "brush_majoris",
+      "values": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "name": "canvas_filling",
+      "values": [
+        "plain_color",
+        "top_row_pouring",
+        "rhythmic_paint_roller",
+        "stains",
+        "linear_paint_roller"
+      ]
+    },
+    {
+      "name": "continuity_pairing",
+      "values": [
+        "right_margin",
+        "both_margins",
+        "left_margin"
+      ]
+    },
+    {
+      "name": "final_touch",
+      "values": [
+        "white_flourish",
+        "paint_brushes",
+        "none",
+        "two-tone_diluted_stains",
+        "white_splash",
+        "black_splash"
+      ]
+    },
+    {
+      "name": "frame",
+      "values": [
+        "none",
+        "narrow",
+        "medium",
+        "wide"
+      ]
+    },
+    {
+      "name": "high_density",
+      "values": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "name": "hole",
+      "values": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "name": "palette",
+      "values": [
+        "cobalt_turquoise",
+        "pale_ultramarine",
+        "charcoal_light_grey___indigo_blue",
+        "prussian_blue",
+        "naples_orange",
+        "burnt_umber",
+        "chromium_oxide_green",
+        "cadmium_scarlet",
+        "titanium_white",
+        "ivory_black",
+        "pale_sienna",
+        "gold_ochre",
+        "indian_yellow",
+        "manganese_blue___crimson_red",
+        "greek_terracota",
+        "zinc_white___lamp_black"
+      ]
+    },
+    {
+      "name": "solvent_spills",
+      "values": [
+        "yes",
+        "no"
+      ]
+    }
+  ]
+}

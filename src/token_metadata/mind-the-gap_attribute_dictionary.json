@@ -1,0 +1,192 @@
+{
+  "root": [
+    {
+      "name": "advection",
+      "values": [
+        "flows",
+        "curls"
+      ]
+    },
+    {
+      "name": "base_scale",
+      "values": [
+        "medium",
+        "small-ish",
+        "oh_so_chunky",
+        "chunky",
+        "small",
+        "tiny",
+        "very_chunky"
+      ]
+    },
+    {
+      "name": "circular",
+      "values": [
+        "no",
+        "influential",
+        "strong",
+        "barely"
+      ]
+    },
+    {
+      "name": "colour_style",
+      "values": [
+        "coloured_tips",
+        "spraycan",
+        "colour_fills",
+        "random_accents",
+        "fills_and_tips_mix",
+        "stripes",
+        "one_accent",
+        "wireframe"
+      ]
+    },
+    {
+      "name": "genome",
+      "values": [
+        "cropped",
+        "loose_uniform",
+        "curlers",
+        "let_s_get_close",
+        "simple"
+      ]
+    },
+    {
+      "name": "manipulation",
+      "values": [
+        "none",
+        "down",
+        "clamp"
+      ]
+    },
+    {
+      "name": "max_tube_length",
+      "values": [
+        "tent_pole",
+        "broom_handle",
+        "skipping_rope",
+        "art_tube",
+        "clothes_line",
+        "pringles_tube",
+        "jaffa_cake"
+      ]
+    },
+    {
+      "name": "mutation",
+      "values": [
+        "wave_columns",
+        "pi_mult",
+        "none",
+        "supernova"
+      ]
+    },
+    {
+      "name": "noise_detail",
+      "values": [
+        "detailed",
+        "high_detail",
+        "soft",
+        "regular",
+        "very_soft",
+        "intense"
+      ]
+    },
+    {
+      "name": "noise_octaves",
+      "values": [
+        "medium_range",
+        "wide_range",
+        "two",
+        "thx_sound"
+      ]
+    },
+    {
+      "name": "palette",
+      "values": [
+        "chalks",
+        "blobby",
+        "cyphr",
+        "fisherprice_dark",
+        "morning_sun_in_a_dusty_room",
+        "jazz",
+        "frank",
+        "oranges",
+        "rand-ey",
+        "sea",
+        "ghost",
+        "palace",
+        "crystals",
+        "oliver",
+        "wanderlust",
+        "poster",
+        "fischerprice",
+        "grey_boats",
+        "toddler",
+        "paris"
+      ]
+    },
+    {
+      "name": "scaling_mutation",
+      "values": [
+        "y-reverse",
+        "none",
+        "y",
+        "x-reverse",
+        "x",
+        "y-sine"
+      ]
+    },
+    {
+      "name": "scaling_mutation_strength",
+      "values": [
+        "spicy",
+        "none",
+        "warm",
+        "low",
+        "super_low",
+        "very_low",
+        "medium"
+      ]
+    },
+    {
+      "name": "shape_filter",
+      "values": [
+        "high",
+        "none",
+        "medium_high",
+        "low",
+        "medium",
+        "moderate_low",
+        "medium_low",
+        "very_low"
+      ]
+    },
+    {
+      "name": "tube_spacing",
+      "values": [
+        "small-ish",
+        "spacious",
+        "medium",
+        "tiny",
+        "very_chunky",
+        "space__the_final_frontier",
+        "small",
+        "palacial"
+      ]
+    },
+    {
+      "name": "tube_width_range",
+      "values": [
+        "none",
+        "high",
+        "medium"
+      ]
+    },
+    {
+      "name": "__",
+      "values": [
+        "the_gap"
+      ]
+    }
+  ]
+}

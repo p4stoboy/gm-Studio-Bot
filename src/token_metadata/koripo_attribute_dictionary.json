@@ -1,0 +1,107 @@
+{
+  "root": [
+    {
+      "name": "blend",
+      "values": [
+        "none",
+        "triptych",
+        "vertical",
+        "diagonal"
+      ]
+    },
+    {
+      "name": "distortion",
+      "values": [
+        "skew",
+        "none",
+        "grid",
+        "strata"
+      ]
+    },
+    {
+      "name": "primary_element",
+      "values": [
+        "air",
+        "magnetism",
+        "water",
+        "space",
+        "poison",
+        "force",
+        "lightning",
+        "gravity",
+        "time",
+        "thunder",
+        "aether",
+        "earth",
+        "flare",
+        "nature",
+        "fire",
+        "ice",
+        "smoke"
+      ]
+    },
+    {
+      "name": "secondary_element",
+      "values": [
+        "none",
+        "thunder",
+        "lightning",
+        "force",
+        "water",
+        "smoke",
+        "earth",
+        "space",
+        "fire",
+        "poison",
+        "air",
+        "ice",
+        "gravity",
+        "time",
+        "flare",
+        "aether",
+        "nature",
+        "magnetism"
+      ]
+    },
+    {
+      "name": "style",
+      "values": [
+        "acrylic",
+        "ink",
+        "sketch",
+        "oil"
+      ]
+    },
+    {
+      "name": "tertiary_element",
+      "values": [
+        "none",
+        "time",
+        "earth",
+        "air",
+        "nature",
+        "gravity",
+        "lightning",
+        "force",
+        "water",
+        "flare",
+        "space",
+        "aether",
+        "smoke",
+        "thunder",
+        "poison",
+        "fire",
+        "ice",
+        "magnetism"
+      ]
+    },
+    {
+      "name": "turbulence",
+      "values": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  ]
+}

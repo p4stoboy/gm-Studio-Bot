@@ -1,0 +1,141 @@
+{
+  "root": [
+    {
+      "name": "block_sampling",
+      "values": [
+        "random",
+        "elevation",
+        "proportional",
+        "sequential",
+        "selection",
+        "markov"
+      ]
+    },
+    {
+      "name": "decoration_density",
+      "values": [
+        "elevation",
+        "light",
+        "constant"
+      ]
+    },
+    {
+      "name": "decoration_sampling",
+      "values": [
+        "proportional",
+        "random",
+        "markov",
+        "n_a",
+        "selection",
+        "sequential",
+        "elevation"
+      ]
+    },
+    {
+      "name": "density",
+      "values": [
+        "high",
+        "normal"
+      ]
+    },
+    {
+      "name": "directional_shading",
+      "values": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "name": "face_fill",
+      "values": [
+        "sides_only",
+        "all",
+        "n_a",
+        "tops_only"
+      ]
+    },
+    {
+      "name": "fill_offset",
+      "values": [
+        "none",
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    {
+      "name": "fill_sampling",
+      "values": [
+        "elevation",
+        "sequential",
+        "random",
+        "n_a",
+        "selection",
+        "markov",
+        "proportional"
+      ]
+    },
+    {
+      "name": "palette",
+      "values": [
+        "mint",
+        "venice_lockjaw",
+        "utopia",
+        "liquorice",
+        "naranja",
+        "tandem",
+        "khaki",
+        "miscelanea",
+        "avalon",
+        "noon",
+        "mango",
+        "golden_hour",
+        "vanilla",
+        "forest_fire",
+        "lavender",
+        "celadon",
+        "strawberry",
+        "3am",
+        "blueprint",
+        "prussia"
+      ]
+    },
+    {
+      "name": "primary_division",
+      "values": [
+        "irregular",
+        "grid",
+        "random",
+        "alternating",
+        "honeycomb",
+        "sliced"
+      ]
+    },
+    {
+      "name": "shape",
+      "values": [
+        "standard",
+        "diamond"
+      ]
+    },
+    {
+      "name": "stroke_offset",
+      "values": [
+        "none",
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    {
+      "name": "surface_type",
+      "values": [
+        "wave",
+        "plateau",
+        "spikes",
+        "cliffs",
+        "bump"
+      ]
+    }
+  ]
+}

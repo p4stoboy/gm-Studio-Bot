@@ -1,0 +1,86 @@
+{
+  "root": [
+    {
+      "name": "aspect_ratio",
+      "values": [
+        "1_5",
+        "1_75",
+        "2",
+        "1_25"
+      ]
+    },
+    {
+      "name": "background",
+      "values": [
+        "paper",
+        "random"
+      ]
+    },
+    {
+      "name": "circles_escape",
+      "values": [
+        "false",
+        "true"
+      ]
+    },
+    {
+      "name": "composition",
+      "values": [
+        "robert",
+        "oracle",
+        "piton",
+        "delphi",
+        "dmitri",
+        "sonia",
+        "portal",
+        "space"
+      ]
+    },
+    {
+      "name": "double_borders",
+      "values": [
+        "false",
+        "true"
+      ]
+    },
+    {
+      "name": "light_colors",
+      "values": [
+        "false",
+        "true"
+      ]
+    },
+    {
+      "name": "out_of_ink",
+      "values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "palette",
+      "values": [
+        "apollo",
+        "hermes",
+        "hypnos",
+        "zeus",
+        "ares",
+        "janus",
+        "artemis",
+        "demeter",
+        "iris",
+        "tyche",
+        "athena",
+        "hephaestus",
+        "dionysus",
+        "hecate",
+        "nemesis",
+        "nike",
+        "aphrodite",
+        "poseidon",
+        "hera",
+        "hades"
+      ]
+    }
+  ]
+}

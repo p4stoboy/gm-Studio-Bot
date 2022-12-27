@@ -1,0 +1,146 @@
+{
+  "root": [
+    {
+      "name": "blueprints",
+      "values": [
+        "all",
+        "random",
+        "preset_1",
+        "preset_5",
+        "preset_3",
+        "preset_4",
+        "preset_6",
+        "preset_2",
+        "preset_7",
+        "preset_8"
+      ]
+    },
+    {
+      "name": "contrast",
+      "values": [
+        "medium",
+        "high",
+        "low",
+        "n_a"
+      ]
+    },
+    {
+      "name": "density",
+      "values": [
+        "very_high",
+        "high",
+        "medium",
+        "very_low",
+        "extreme",
+        "low"
+      ]
+    },
+    {
+      "name": "island",
+      "values": [
+        "false",
+        "true"
+      ]
+    },
+    {
+      "name": "margin",
+      "values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "palette",
+      "values": [
+        "blue_candy",
+        "amino_acid",
+        "space_orange",
+        "fantail",
+        "atlantis",
+        "photo",
+        "red_metal",
+        "shoreline",
+        "space_candy",
+        "metallurgy",
+        "odyssey",
+        "waldo",
+        "dark_monochrome",
+        "machine_elves",
+        "monochrome",
+        "solidarity",
+        "mondrian",
+        "sol",
+        "oasis",
+        "watch_2",
+        "utopia",
+        "rg0by",
+        "pseudo_prototype__4",
+        "techno",
+        "kindergarten"
+      ]
+    },
+    {
+      "name": "palette_contd",
+      "values": [
+        "happyland",
+        "sunset_prime",
+        "strawberry",
+        "grove",
+        "dllll",
+        "confetti",
+        "springfield",
+        "glory",
+        "rgby0",
+        "cherry_candy",
+        "home",
+        "mars",
+        "lunar_base",
+        "magnifique",
+        "grape_candy",
+        "the_amazing",
+        "jro",
+        "rgb01",
+        "watch",
+        "happyland_2",
+        "april_morning_on_the_east_coast",
+        "ice_cream_cake"
+      ]
+    },
+    {
+      "name": "plasticity",
+      "values": [
+        "medium",
+        "high",
+        "low"
+      ]
+    },
+    {
+      "name": "shadow",
+      "values": [
+        "east",
+        "south",
+        "n_a"
+      ]
+    },
+    {
+      "name": "subdivision",
+      "values": [
+        "1x1",
+        "50x50",
+        "30x30",
+        "5x5",
+        "10x10",
+        "6x6",
+        "15x15",
+        "40x40",
+        "60x60",
+        "12x12",
+        "4x4",
+        "8x8",
+        "20x20",
+        "2x2",
+        "3x3"
+      ]
+    }
+  ]
+}
