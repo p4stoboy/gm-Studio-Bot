@@ -41,7 +41,7 @@ const gm_func = async (interaction: ChatInputCommandInteraction) => {
   const token_data = await get_token_data(collection.slug, id).catch((e) => console.log(e));
   if (!token_data) return;
   //build embed
-  const hex = '#00000000';
+  const hex = '#2F3136';
   const embed = token_embed(token_data, hex as HexColorString, collection);
 
   const message = await interaction.editReply({embeds: [embed]}).catch((e) => console.log(e));
