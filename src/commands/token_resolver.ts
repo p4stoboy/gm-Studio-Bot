@@ -1,20 +1,16 @@
-//
-//
-// EVERY COMMAND CALLS THESE FUNCTIONS
-//
-//
+import {ChatInputCommandInteraction, EmbedBuilder, HexColorString} from "discord.js";
+import {collections} from "../collections";
+import {choose} from "../helpers";
+import {token_embed} from "../discord_functions/token_embed";
+import {GMCollection} from "../types/GMCollection";
 
+
+// EVERY COMMAND CALLS THESE FUNCTIONS
+// ::check_retry
 // this checks whether the image loaded in to the embed after 10 seconds, if not it resends the embed alternating between
 // max quality (95) and pretty good (80) until the image resolves.
 // quality gets alternated because the URL needs to change for Discord to retry the request, but we don't want to drop it
 // too low so we alternate.
-import {ChatInputCommandInteraction, EmbedBuilder, HexColorString} from "discord.js";
-import {collections} from "../collections";
-import {choose} from "../helpers";
-import {get_token_data} from "../api_functions/get_token_data";
-import {token_embed} from "../discord_functions/token_embed";
-import {GMCollection} from "../types/GMCollection";
-
 const check_retry = async (interaction: ChatInputCommandInteraction, _embed: EmbedBuilder, url: string, side = 1) => {
   const message = await interaction.fetchReply();
   if (!message) throw new Error('no message found');
@@ -25,7 +21,7 @@ const check_retry = async (interaction: ChatInputCommandInteraction, _embed: Emb
   }
 }
 
-
+// filter supplied trait options over collection recursively and return what's left
 const filter_options = (interaction: ChatInputCommandInteraction, collection: GMCollection) => {
   const options = interaction.options.data;
   let tokens = [...collection.tokens];
@@ -39,13 +35,13 @@ const filter_options = (interaction: ChatInputCommandInteraction, collection: GM
 // main function to parse all command parameters and return embed to interaction
 export const gm_func = async (interaction: ChatInputCommandInteraction) => {
   await interaction.deferReply();
-  // bad filter to coerce collection
+  // try and get collection from command name / default to random pattern
   const filter = collections.filter(x => x.slug === interaction.commandName)[0];
   const collection = filter ? filter : choose(collections);
 
   // get token id
   const id_input = interaction.options.get('token_id');
-  const filtered = filter_options(interaction, collection);
+  const filtered = filter_options(interaction, collection); // will be whole collection if no traits supplied
   if (!id_input && filtered.length === 0) {
     await interaction.editReply({content: `No ${collection.name} found with those traits.`});
     return;
