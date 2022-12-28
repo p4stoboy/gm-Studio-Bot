@@ -17,7 +17,7 @@ const check_retry = async (interaction: ChatInputCommandInteraction, _embed: Emb
   if (!message) throw new Error('no message found');
   const embed = message.embeds[0];
   if (embed.image?.width === 0) {
-    await interaction.editReply({embeds: [_embed.setImage((side < 0 ? url : url + '?img-quality=60'))]});
+    await interaction.editReply({embeds: [_embed.setImage((side < 0 ? url + '?img-quality=75' : url + '?img-quality=60'))]});
     setTimeout(async () => await check_retry(interaction, _embed, url, -side), 10000);
   }
 }
