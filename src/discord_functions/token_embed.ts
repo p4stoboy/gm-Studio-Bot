@@ -12,7 +12,7 @@ export const token_embed = (token_data: TokenData, color: HexColorString, collec
   embed.setImage(token_data.image);
   embed.setFooter({text: 'gm.studio', iconURL: config.avatar_url})
   if (is_traits && traits !== '') {
-    embed.addFields([{name: 'Filter', value: traits, inline: false}]);
+    embed.addFields([{name: '[requested traits]', value: traits, inline: false}]);
   }
   return embed;
 }

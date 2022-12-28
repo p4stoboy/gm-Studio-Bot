@@ -17,7 +17,7 @@ const check_retry = async (interaction: ChatInputCommandInteraction, _embed: Emb
   if (!message) throw new Error('no message found');
   const embed = message.embeds[0];
   if (embed.image?.width === 0) {
-    await interaction.editReply({embeds: [_embed.setImage((side < 0 ? url : url + '?img-quality=70'))]});
+    await interaction.editReply({embeds: [_embed.setImage((side < 0 ? url : url + '?img-quality=60'))]});
     setTimeout(async () => await check_retry(interaction, _embed, url, -side), 10000);
   }
 }
@@ -30,9 +30,9 @@ const filter_options = (interaction: ChatInputCommandInteraction, collection: GM
   for (let option of options) {
     if (option.name === "token_id") continue;
     tokens = tokens.filter(token => token.attributes[option.name === "palette_contd" ? "palette" : option.name] === option.value);
-    trait_string += `${(option.name === "palette_contd" ? "palette" : option.name)}: *${option.value}* · `;
+    trait_string += `${(option.name === "palette_contd" ? "palette" : option.name)}: *${option.value}*\n`;
   }
-  return [tokens, trait_string.slice(0, -3)];
+  return [tokens, trait_string.slice(0, -1)];
 }
 
 // main function to parse all command parameters and return embed to interaction
