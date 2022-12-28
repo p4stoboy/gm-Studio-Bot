@@ -3,6 +3,7 @@ import {collections} from "../collections";
 import {choose} from "../helpers";
 import {token_embed} from "../discord_functions/token_embed";
 import {GMCollection} from "../types/GMCollection";
+import {TokenData} from "../types/TokenData";
 
 
 // EVERY COMMAND CALLS THESE FUNCTIONS
@@ -22,14 +23,16 @@ const check_retry = async (interaction: ChatInputCommandInteraction, _embed: Emb
 }
 
 // filter supplied trait options over collection recursively and return what's left
-const filter_options = (interaction: ChatInputCommandInteraction, collection: GMCollection) => {
+const filter_options = (interaction: ChatInputCommandInteraction, collection: GMCollection): [TokenData[], string] => {
   const options = interaction.options.data;
+  let trait_string = '';
   let tokens = [...collection.tokens];
   for (let option of options) {
     if (option.name === "token_id") continue;
     tokens = tokens.filter(token => token.attributes[option.name === "palette_contd" ? "palette" : option.name] === option.value);
+    trait_string += `${(option.name === "palette_contd" ? "palette" : option.name)}: *${option.value}* · `;
   }
-  return tokens;
+  return [tokens, trait_string.slice(0, -3)];
 }
 
 // main function to parse all command parameters and return embed to interaction
@@ -41,12 +44,14 @@ export const gm_func = async (interaction: ChatInputCommandInteraction) => {
 
   // get token id
   const id_input = interaction.options.get('token_id');
-  const filtered = filter_options(interaction, collection); // will be whole collection if no traits supplied
+  const [filtered, trait_string] = filter_options(interaction, collection); // will be whole collection if no traits supplied
   if (!id_input && filtered.length === 0) {
-    await interaction.editReply({content: `No ${collection.name} found with those traits.`});
+    await interaction.editReply({content: `No ${collection.name} found with [${trait_string}].`});
+    setTimeout(async () => await interaction.deleteReply(), 5000);
     return;
   }
   const id: number = id_input ? id_input.value as number : choose(filtered).tokenId;
+  const is_traits = !id_input;
 
   // TODO: keep an eye out for conditional option implementations so we can not have a separate command
   //  for each collection whilst retaining the appropriate parameter coercions
@@ -57,7 +62,7 @@ export const gm_func = async (interaction: ChatInputCommandInteraction) => {
   // if (!token_data) return;
   //build embed
   const hex = '#2F3136';
-  const embed = token_embed(token_data, hex as HexColorString, collection);
+  const embed = token_embed(token_data, hex as HexColorString, collection, is_traits, trait_string);
 
   const message = await interaction.editReply({embeds: [embed]}).catch((e) => console.log(e));
   if (!message) return;
