@@ -1,0 +1,68 @@
+{
+  "root": [
+    {
+      "name": "erased_pencil",
+      "values": [
+        "mostly",
+        "slightly",
+        "untouched"
+      ]
+    },
+    {
+      "name": "paper_color",
+      "values": [
+        "white",
+        "black"
+      ]
+    },
+    {
+      "name": "pencil",
+      "values": [
+        "2h",
+        "hb",
+        "6h"
+      ]
+    },
+    {
+      "name": "river",
+      "values": [
+        "rhine",
+        "paran_",
+        "mekong",
+        "nile",
+        "st__lawrence",
+        "amazon",
+        "rhone",
+        "mississippi",
+        "rio_negro",
+        "lez",
+        "volga",
+        "yoshino",
+        "danube",
+        "yangtze",
+        "congo",
+        "murray",
+        "ganges"
+      ]
+    },
+    {
+      "name": "state",
+      "values": [
+        "frozen",
+        "wavy",
+        "torrential",
+        "whirling",
+        "stirred",
+        "still",
+        "frosty",
+        "powerful",
+        "chaotic",
+        "cascading",
+        "melting",
+        "agitated",
+        "icy",
+        "splashed"
+      ]
+    }
+  ]
+}
